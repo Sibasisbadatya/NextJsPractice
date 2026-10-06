@@ -1,5 +1,4 @@
 
-import "./globals.css";
 export const metadata = {
   title: {
     template: '%s | MyApp',
@@ -8,11 +7,16 @@ export const metadata = {
   description: 'This is the blog page',
 }
 export default function RootLayout({ children }) {
+    // the above children is the whole app.
   return (
     <html
       lang="en"
     >
-      <body>{children}</body>
+      <body>
+        <header>Header Main</header>
+        <body>{children}</body>
+        <footer>Footer Main</footer>
+      </body>
     </html>
   );
 }
